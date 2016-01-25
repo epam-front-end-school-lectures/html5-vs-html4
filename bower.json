@@ -1,0 +1,28 @@
+{
+  "name": "html5-vs-html4",
+  "description": "HTML5 vs HTML/HTML 4.01/XHTML Presentation",
+  "authors": "Andrii Mokhovyk",
+  "version": "0.0.1",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "homepage": "https://github.com/epam-front-end-school-lectures/html5-vs-html4",
+  "bugs": {
+    "url": "https://github.com/epam-front-end-school-lectures/html5-vs-html4/issues"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "headjs": "~1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epam-front-end-school-lectures/html5-vs-html4.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
