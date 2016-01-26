@@ -1,22 +1,21 @@
 {
-  "name": "reveal.js",
-  "version": "3.2.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
+  "name": "html5-vs-html4",
+  "version": "0.0.1",
+  "description": "HTML5 vs HTML/HTML 4.01/XHTML Presentation",
+  "homepage": "https://github.com/epam-front-end-school-lectures/html5-vs-html4",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
+    "name": "Andrii Mokhovyk",
     "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "web": "http://mokhovyk.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "https://github.com/epam-front-end-school-lectures/html5-vs-html4.git"
   },
   "engines": {
     "node": "~4.1.1"

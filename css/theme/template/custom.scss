@@ -1,0 +1,13 @@
+
+.reveal .controls button {
+	outline: 0;
+	opacity: 0.15;
+}
+.reveal .progress {
+	background: $backgroundColor;
+	height: 5px;
+}
+
+.reveal .progress span {
+	background: $secondaryLinkColor;
+}

@@ -13,24 +13,28 @@
 
 // Include theme-specific fonts
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/oswald/oswald.css);
 
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
-$mainColor: #222;
-$headingColor: #222;
+$mainColor: #464547;
+$headingColor: #464547;
 
 $mainFontSize: 38px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Oswald', Helvetica, sans-serif;
 $headingTextShadow: none;
+$heading1TextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #2a76dd;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$linkColor: #39c2d7;
+$linkColorHover: lighten( $linkColor, 10% );
+$selectionBackgroundColor: lighten( $linkColor, 20% );
+
+$secondaryLinkColor: #A3C644;
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -46,4 +50,8 @@ section.has-dark-background {
 
 // Theme template ------------------------------
 @import "../template/theme";
+// ---------------------------------------------
+
+// Theme template ------------------------------
+@import "../template/custom";
 // ---------------------------------------------
