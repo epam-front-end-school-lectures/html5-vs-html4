@@ -5,7 +5,18 @@
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../lib/font/oswald/oswald.css);
-section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6,
+section.has-dark-background-custom,
+section.has-dark-background-custom h1,
+section.has-dark-background-custom h2,
+section.has-dark-background-custom h3,
+section.has-dark-background-custom h4,
+section.has-dark-background-custom h5,
+section.has-dark-background-custom h6 {
+  color: #fff; }
+
+section.has-dark-background a,
+section.has-dark-background-custom a {
   color: #fff; }
 
 /*********************************************
@@ -288,11 +299,22 @@ body {
 
 .reveal .controls button {
   outline: 0;
-  opacity: 0.15; }
+  opacity: 0.10; }
 
 .reveal .progress {
-  background: #fff;
+  background: transparent;
   height: 5px; }
 
 .reveal .progress span {
-  background: #A3C644; }
+  background: #7F993A; }
+
+.reveal section img.plain {
+  background: none; }
+
+.reveal .slides section .fragment.grow {
+  transform: scale(0.9); }
+  .reveal .slides section .fragment.grow.visible {
+    transform: scale(1.1); }
+
+.reveal small {
+  vertical-align: baseline; }

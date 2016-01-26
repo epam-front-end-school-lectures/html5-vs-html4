@@ -34,15 +34,20 @@ $linkColor: #39c2d7;
 $linkColorHover: lighten( $linkColor, 10% );
 $selectionBackgroundColor: lighten( $linkColor, 20% );
 
-$secondaryLinkColor: #A3C644;
+$secondaryLinkColor: #7F993A;
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
-section.has-dark-background {
+section.has-dark-background,
+section.has-dark-background-custom {
 	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+
+	a {
 		color: #fff;
 	}
 }
@@ -52,6 +57,6 @@ section.has-dark-background {
 @import "../template/theme";
 // ---------------------------------------------
 
-// Theme template ------------------------------
+// Custom template ------------------------------
 @import "../template/custom";
 // ---------------------------------------------

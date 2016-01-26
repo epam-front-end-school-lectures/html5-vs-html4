@@ -1,13 +1,28 @@
 
 .reveal .controls button {
 	outline: 0;
-	opacity: 0.15;
+	opacity: 0.10;
 }
 .reveal .progress {
-	background: $backgroundColor;
+	background: transparent;;
 	height: 5px;
 }
 
 .reveal .progress span {
 	background: $secondaryLinkColor;
+}
+.reveal section img.plain {
+	background: none;
+}
+
+.reveal .slides section .fragment.grow {
+	transform: scale( 0.9 );
+
+	&.visible {
+		transform: scale( 1.1 );
+	}
+}
+
+.reveal small {
+	vertical-align: baseline;
 }

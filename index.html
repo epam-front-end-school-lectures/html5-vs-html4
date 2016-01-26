@@ -32,30 +32,143 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<!--
+		PRIMARY COLORS
+		SHARP BLUE: #39C2D7
+		LIME GREEN: #A3C644
+		GRAPHITE: #464547
+		WHITE: #ffffff
+
+		SECONDARY COLORS
+		RASPBERRY: #B22746
+		-->
 	</head>
 
 	<body>
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
+			<!-- SLIDES -->
 			<div class="slides">
-				<section>
-					<h1>HTML5 vs HTML/HTML 4.01/XHTML</h1>
-					<h3>The HTML Presentation Framework</h3>
+
+				<!-- SECTION 0 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML5 <small style="display:block;">vs</small> HTML/HTML 4.01/XHTML</h1>
 					<p>
 						<small>Created by <a href="http://mokhovyk.com">Andrii Mokhovyk</a></small>
 					</p>
+					<img width="288" height="108" class="plain" style="margin-bottom:-118px;" data-src="img/epam_logo_white.png" alt="EPAM">
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>Agenda</h2>
+					<ol>
+						<li class="fragment grow">Intro. History of HTML</li>
+						<li class="fragment grow">HTML4 implementation and improvements</li>
+						<li class="fragment grow">Doctype & syntax zoo in HTML4</li>
+						<li class="fragment grow">Industry evolution</li>
+						<li class="fragment grow">HTML5 and its benefits</li>
+						<li class="fragment grow">HTML5 today - in specs and browsers</li>
+					</ol>
+				</section>
+				<!-- /SECTION 0 -->
+
+				<!-- SECTION 1 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>History of HTML</h1>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				<section>
+					<h2>Why we should to know the history?</h2>
+				</section>
+
+				<section data-markdown>
+
+						<script type="text/template">
+							## What is HTML?
+
+							HyperText Markup Language is the standard markup language used to create web pages.
+
+							```
+							<!DOCTYPE html>
+							<html>
+							<head>
+								<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+								<title>HTML Document</title>
+							</head>
+							<body>
+							<p>
+								<b>
+									Этот текст будет полужирным,
+									<i>а этот - ещё и курсивным</i>
+								</b>
+							</p>
+							</body>
+							</html>
+							```
+						</script>
+
+				</section>
+
+				<section>
+					<h5>HTML <small>is an application</small> SGML (Standard Generalized Markup Language) <small>and complies with the international standard</small> ISO 8879.</h5>
+
+					<pre><code class="hljs"><quote type="example">
+	typically something like <italics>this</italics>
+</quote></code></pre>
+				</section>
+
+				<section>
+					<h5>Разработн в для</h5>
+				</section>
+
+				<section>
+					<h5>Версии много стандартов до 1935</h5>
+				</section>
+
+				<section>
+					<h2>Timeline</h2>
+				</section>
+
+				<section>
+					<h5>Версии 2</h5>
+				</section>
+
+				<section>
+					<h5>Версии 3 3.2</h5>
+				</section>
+
+				<section>
+					<h5>Версии 4</h5>
+				</section>
+
+				<section>
+					<h5>Где сейчас используют html4</h5>
+				</section>
+				<!-- /SECTION 1 -->
+
+				<!-- SECTION 2 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>HTML4 <br><small>implementation and improvements</small></h1>
+				</section>
+
+				<section>
+					<h2>XHTML1</h2>
+				</section>
+				<!-- /SECTION 2 -->
+
+				<!-- SECTION 3 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>Doctype</h1>
+				</section>
+
+				<section>
+					<h2>Doctype</h2>
+				</section>
+				<!-- /SECTION 3 -->
+
+				<!-- lover ipsum -->
 				<section>
 					<section>
 						<h2>Vertical Slides</h2>
@@ -81,26 +194,12 @@
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
 					<h2>Point of View</h2>
 					<p>
 						Press <strong>ESC</strong> to enter the slide overview.
 					</p>
 					<p>
 						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
 					</p>
 				</section>
 
@@ -158,25 +257,6 @@
 					</p>
 				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
 				<section>
 					<section data-background="#dddddd">
 						<h2>Slide Backgrounds</h2>
@@ -225,20 +305,20 @@
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+							function linkify( selector ) {
+							  if( supports3DTransforms ) {
 
-    var nodes = document.querySelectorAll( selector );
+								var nodes = document.querySelectorAll( selector );
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+								for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+								  var node = nodes[i];
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+								  if( !node.className ) {
+									node.className += ' roll';
+								  }
+								}
+							  }
+							}
 					</code></pre>
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
@@ -376,6 +456,7 @@ Reveal.addEventListener( 'customevent', function() {
 				</section>
 
 			</div>
+			<!-- /SLIDES -->
 
 		</div>
 
