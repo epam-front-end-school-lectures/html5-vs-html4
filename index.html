@@ -84,31 +84,29 @@
 				</section>
 
 				<section data-markdown>
+					<script type="text/template">
+						## What is HTML?
 
-						<script type="text/template">
-							## What is HTML?
+						HyperText Markup Language is the standard markup language used to create web pages.
 
-							HyperText Markup Language is the standard markup language used to create web pages.
-
-							```
-							<!DOCTYPE html>
-							<html>
-							<head>
-								<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-								<title>HTML Document</title>
-							</head>
-							<body>
-								<p>
-									<b>
-										It is bold text,
-										<i>it is also italic text</i>
-									</b>
-								</p>
-							</body>
-							</html>
-							```
-						</script>
-
+						```
+						<!DOCTYPE html>
+						<html>
+						<head>
+							<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+							<title>HTML Document</title>
+						</head>
+						<body>
+							<p>
+								<b>
+									It is bold text,
+									<i>it is also italic text</i>
+								</b>
+							</p>
+						</body>
+						</html>
+						```
+					</script>
 				</section>
 
 				<section>
@@ -124,12 +122,61 @@
 				</section>
 
 				<section>
-					<h5>HTML 1.0 specification does not exist</h5>
-					<p> Until 1995, there were many informal standards for HTML. For the standard version different from them, she immediately assigned a second number</p>
+					<h3>HTML 1.0 specification does not exist</h3>
+					<p>Until 1995, there were many informal standards for HTML. For the standard version different from them, she immediately assigned a second number</p>
 				</section>
 
 				<section>
 					<h2>Timeline</h2>
+				</section>
+
+				<section>
+					<style>
+						.timeline {display: table; width:960px; background:red;}
+						.timeline__row {display:table-row}
+						.timeline__cell {display:table-cell;width:15%;text-align:left;position:relative;}
+						.timeline__cell:before {content:attr(data-title);position:absolute;top:0;left:0;}
+						.timeline__drop {position:absolute;top:100px;left:0;}
+					</style>
+					<div class="timeline">
+						<div class="timeline__row">
+							<div class="timeline__cell" data-title="1995">
+								<div class="timeline__drop fragment">
+									<h4>November 24, 1995</h4>
+									<p>HTML 2.0 was published as IETF RFC 1866</p>
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="1997" style="width:25%;">
+								<div class="timeline__drop fragment">
+									<h4>January 14, 1997</h4>
+									HTML 3.2 was published as a W3C Recommendation
+								</div>
+								<div class="timeline__drop fragment" style="left:80%;">
+									<h4>January 14, 1997</h4>
+									HTML 3.2 was published as a W3C Recommendation
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="1999">
+								<div class="timeline__drop fragment">
+									<h4>December 24, 1999</h4>
+									HTML 4.01 was published as a W3C Recommendatio
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2000" style="width:100%;">
+								<div class="timeline__drop fragment">
+									<h4>May 2000</h4>
+									"ISO HTML", based on HTML 4.01 Strict was published as an ISO/IEC international standard (ISO/IEC 15445:2000)
+								</div>
+							</div>
+							<div class="timeline__cell" data-title="2014">
+								<div class="timeline__drop fragment">
+									<h4>October 28, 2014</h4>
+									HTML5 was published as a W3C Recommendation.[
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</section>
 
 				<section>
@@ -145,7 +192,10 @@
 				</section>
 
 				<section>
-					<h5>Where are the deprecated elements of html4 are used now??</h5>
+					<h5>Where are the deprecated elements of html4<br> are used now?</h5>
+					<br><pre><code class="hljs">
+<font size="5" color="red" face="Arial">Hello world!</font>
+				</code></pre>
 				</section>
 				<!-- /SECTION 1 -->
 
@@ -196,6 +246,9 @@
 				</section>
 				<!-- /SECTION 3 -->
 
+				<section data-background="img/enough_for_today.gif" data-background-color="#250F0D" data-background-size="contain">
+				</section>
+
 				<!-- SECTION 4 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
 					<h1>Industry evolution</h1>
@@ -213,6 +266,10 @@
 
 				<section>
 					<img width="480" height="305" class="plain" data-src="img/html4-html5.png" alt="html4-html5">
+				</section>
+
+				<section>
+					<h1>table</h1>
 				</section>
 
 				<section>
