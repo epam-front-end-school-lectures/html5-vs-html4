@@ -65,8 +65,9 @@
 					<h2>Agenda</h2>
 					<ol>
 						<li class="fragment grow">Intro. History of HTML</li>
-						<li class="fragment grow">HTML4 implementation and improvements</li>
-						<li class="fragment grow">Doctype & syntax in HTML4</li>
+						<li class="fragment grow">HTML4</li>
+						<li class="fragment grow">XHTML</li>
+						<li class="fragment grow">Doctype</li>
 						<li class="fragment grow">Industry evolution</li>
 						<li class="fragment grow">HTML5 and its benefits</li>
 						<li class="fragment grow">HTML5 today</li>
@@ -127,75 +128,60 @@
 				</section>
 
 				<section>
-					<h2>Timeline</h2>
+					<h1>Timeline</h1>
 				</section>
 
 				<section>
 					<style>
-						.timeline {display: table; width:960px; background:red;}
-						.timeline__row {display:table-row}
-						.timeline__cell {display:table-cell;width:15%;text-align:left;position:relative;}
-						.timeline__cell:before {content:attr(data-title);position:absolute;top:0;left:0;}
-						.timeline__drop {position:absolute;top:100px;left:0;}
+						.reveal .timeline {position:relative;display: table; width:1060px;padding-bottom:700px; margin: 0 -50px !important;overflow: hidden;}
+						.reveal .timeline:before {content:'';position:absolute;left:0;top:0;width:1040px;background:#39C2D7;height:84px;}
+						.reveal .timeline__row {display:table-row}
+						.reveal .timeline__cell {display:table-cell;width:17%; text-align:left;position:relative;}
+						.reveal .timeline__cell:before {content:attr(data-title);position:absolute;top:0;left:0;padding:10px;font-size:1.4em;color:#fff;z-index:5;}
+						.reveal .timeline__drop {position:absolute;top:110px;left:10px;}
+						.reveal .timeline__drop h5 {font-size:0.8em;}
+						.reveal .timeline__drop p {font-size:0.7em;}
+						.reveal .timeline__drop:before {content:'';position:absolute;top:-300px;left:0;background:#39C2D7;height:300px;width:8px;}
 					</style>
 					<div class="timeline">
 						<div class="timeline__row">
 							<div class="timeline__cell" data-title="1995">
-								<div class="timeline__drop fragment">
-									<h4>November 24, 1995</h4>
+								<div class="timeline__drop fragment" style="top:150px;">
+									<h5>24.11.1995</h5>
 									<p>HTML 2.0 was published as IETF RFC 1866</p>
 								</div>
 							</div>
-							<div class="timeline__cell" data-title="1997" style="width:25%;">
-								<div class="timeline__drop fragment">
-									<h4>January 14, 1997</h4>
-									HTML 3.2 was published as a W3C Recommendation
+							<div class="timeline__cell" data-title="1997">
+								<div class="timeline__drop fragment" style="left:-9px;z-index:2;">
+									<h5>14.01.1997</h5>
+									<p>HTML 3.2 was published as a W3C Recom.</p>
 								</div>
-								<div class="timeline__drop fragment" style="left:80%;">
-									<h4>January 14, 1997</h4>
-									HTML 3.2 was published as a W3C Recommendation
+								<div class="timeline__drop fragment" style="left:85%;top:300px;">
+									<h5>18.12.1997</h5>
+									<p>HTML 4.0 was published as a W3C Recom.</p>
 								</div>
 							</div>
 							<div class="timeline__cell" data-title="1999">
 								<div class="timeline__drop fragment">
-									<h4>December 24, 1999</h4>
-									HTML 4.01 was published as a W3C Recommendatio
+									<h5>24.12.1999</h5>
+									<p>HTML 4.01 was published as a W3C Recom.</p>
 								</div>
 							</div>
-							<div class="timeline__cell" data-title="2000" style="width:100%;">
-								<div class="timeline__drop fragment">
-									<h4>May 2000</h4>
-									"ISO HTML", based on HTML 4.01 Strict was published as an ISO/IEC international standard (ISO/IEC 15445:2000)
+							<div class="timeline__cell" data-title="2000" style="width:32%;">
+								<div class="timeline__drop fragment" style="top:150px;">
+									<h5>15.05.2000</h5>
+									<p>"ISO HTML", based on HTML 4.01 Strict was published as an ISO/IEC international standard</p>
 								</div>
 							</div>
-							<div class="timeline__cell" data-title="2014">
-								<div class="timeline__drop fragment">
-									<h4>October 28, 2014</h4>
-									HTML5 was published as a W3C Recommendation.[
+							<div class="timeline__cell" data-title="2015">
+								<div class="timeline__drop fragment" style="left:3px;">
+									<h5>28.10.2014</h5>
+									<p>HTML5 was published as a W3C Recom.</p>
 								</div>
 							</div>
 
 						</div>
 					</div>
-				</section>
-
-				<section>
-					<h5>HTML 2.0</h5>
-				</section>
-
-				<section>
-					<h5>HTML 3.0 and HTML 3.2</h5>
-				</section>
-
-				<section>
-					<h5>HTML 4</h5>
-				</section>
-
-				<section>
-					<h5>Where are the deprecated elements of html4<br> are used now?</h5>
-					<br><pre><code class="hljs">
-<font size="5" color="red" face="Arial">Hello world!</font>
-				</code></pre>
 				</section>
 				<!-- /SECTION 1 -->
 
@@ -205,7 +191,71 @@
 				</section>
 
 				<section>
-					<h2>XHTML1</h2>
+					<h2>HTML 4</h2>
+					<p>cамая большая очистка стандарта. Многие элементы были отмечены как устаревшие и нерекомендованные (англ. deprecated). </p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Deprecated Tags in HTML 4.0
+						```
+						<ISINDEX>...</ISINDEX>
+						<APPLET>...</APPLET>
+						<CENTER>...</CENTER>
+						<FONT>...</FONT>
+						<BASEFONT>...</BASEFONT>
+						<STRIKE>...</STRIKE>
+						<S>...</S>
+						<U>...</U>
+						<DIR>...</DIR>
+						<MENU>...</MENU>
+						```
+					</script>
+				</section>
+
+				<section>
+					<h5>Where are the deprecated elements of html4<br> are used now?</h5>
+					<br><pre><code class="hljs">
+<font size="5" color="red" face="Arial">Hello world!</font>
+				</code></pre>
+				</section>
+
+				<section>
+					<h5>Which was element deprecated in HTML4, but reintroduced in HTML5.1 (still working draft)?</h5>
+					<div class="fragment" style="float:left;margin:0;width:500px;margin-right:-71px;">
+						<img data-src="img/contextual-menu-sub-menu.png" width="500" class="plain fragment shrink" alt="contextual-menu">
+					</div>
+
+					<div class="fragment" style="float:right;width:530px;margin:0;">
+						<pre style="margin:0;width:100%;"><code class="hljs">
+<menu id="demo-image" type="context">
+  <menu label="Image Rotation">
+     <menuitem>Rotate 90</menuitem>
+     <menuitem>Rotate 180</menuitem>
+     <menuitem>Flip Horizontally</menuitem>
+     <menuitem>Flip Vertically</menuitem>
+  </menu>
+  <hr>
+  <menuitem>View Image</menuitem>
+  <menuitem>Copy Image</menuitem>
+  <menuitem>Copy Image Location</menuitem>
+   ....
+</menu>
+				</code></pre>
+						</div>
+				</section>
+				<!-- /SECTION 2 -->
+
+				<!-- SECTION 3 -->
+				<section data-background="#39C2D7" class="has-dark-background-custom">
+					<h1>XHTML1</h1>
+				</section>
+
+				<section>
+					<h2>XHTML1<br><small>extensible hypertext markup language</small></h2>
+					<p>В 1998 году Консорциум Всемирной паутины начал работу над новым языком разметки, основанным на HTML 4, но соответствующим синтаксису XML.
+						Впоследствии новый язык получил название XHTML. Первая версия XHTML 1.0 одобрена в качестве Рекомендации консорциума Всемирной паутины 26 января 2000 года.</p>
+					<p>Developed by	World Wide Web Consortium</p>
 				</section>
 
 				<section>
@@ -224,11 +274,32 @@
 						</div>
 					</div>
 				</section>
-				<!-- /SECTION 2 -->
 
-				<!-- SECTION 3 -->
+				<section>
+					<h3>Различия между XHTML и HTML</h3>
+					<p>Главное отличие XHTML от HTML заключается в обработке документа. Документы XHTML обрабатываются своим модулем (парсером) аналогично документам XML. В процессе этой обработки ошибки, допущенные разработчиками, не исправляются.
+
+						XHTML соответствует спецификации SGML, поскольку XML является её подмножеством. HTML обладает множеством особенностей в процессе обработки и фактически перестал относиться к семейству SGML, что и закреплено в черновике спецификации HTML 5.
+
+						Браузер выбирает парсер для обработки документа на основании заголовка content-type, полученного от сервера:
+
+						HTML — text/html
+						XHTML — application/xhtml+xml</p>
+				</section>
+
+				<section>
+					<h3>Различия между XHTML и HTML</h3>
+					<p>все элементы должны быть закрыты. Теги, которые не имеют закрывающего тега (например, <img> или <br>), должны иметь на конце / (например, <br />);
+						логические атрибуты записываются в развёрнутой форме. Например, следует писать <option selected="selected"> или <td nowrap="nowrap">;
+							имена тегов и атрибутов должны быть записаны строчными буквами (например, <img alt="" /> вместо <IMG ALT="" />);
+							XHTML гораздо строже относится к ошибкам в коде; < и & везде, даже в URL, должны замещаться &lt; и &amp; соответственно. По рекомендации W3C браузеры, встретив ошибку в XHTML, должны сообщить о ней и не обрабатывать документ. Для HTML браузеры должны были попытаться понять, что хотел сказать автор;
+							кодировкой по умолчанию является UTF-8 (в отличие от HTML, где кодировкой по умолчанию является ISO 8859-1).</p>
+				</section>
+				<!-- /SECTION 3 -->
+
+				<!-- SECTION 4 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
-					<h1>Doctype</h1>
+					<h1>&lt;!DOCTYPE&gt;</h1>
 				</section>
 
 				<section>
@@ -239,17 +310,45 @@
 
 				<section>
 					<h2>List of Doctype</h2>
+
+					<style>
+						.reveal .hljs-doctype {color:#efef8f;}
+						.reveal .pre_large {margin:10px -10px;width:110%;font-size:0.40em;}
+					</style>
+
+					<pre class="pre_large"><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+
+&lt;!DOCTYPE html&gt;
+					</code></pre>
+
+
+
 				</section>
+
 
 				<section>
 					<h2>Validation</h2>
+					<p>Валидным (то есть отвечающим всем правилам) XHTML-документом считается документ, удовлетворяющий спецификации. В идеале, все браузеры должны следовать веб-стандартам и, в соответствии с ними, валидные документы должны отображаться во всех браузерах на всех платформах. Валидация XHTML-документа рекомендована даже несмотря на то, что она не гарантирует кросс-браузерности. Соответствие документа спецификации может быть проверено на сайте validator.w3.org. При валидации будут обнаружены ошибки в XHTML-разметке; валидатор разъяснит суть ошибок.</p>
 				</section>
-				<!-- /SECTION 3 -->
+				<!-- /SECTION 4 -->
 
 				<section data-background="img/enough_for_today.gif" data-background-color="#250F0D" data-background-size="contain">
 				</section>
 
-				<!-- SECTION 4 -->
+				<!-- SECTION 5 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
 					<h1>Industry evolution</h1>
 				</section>
@@ -257,9 +356,9 @@
 				<section>
 					<h2>xtml1 -> XTML 2 and HTML5</h2>
 				</section>
-				<!-- /SECTION 4 -->
+				<!-- /SECTION 5 -->
 
-				<!-- SECTION 5 -->
+				<!-- SECTION 6 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
 					<h1>HTML5</h1>
 				</section>
@@ -287,9 +386,9 @@
 				<section>
 					<p>Compare semantic HTML4 and HTML5</p>
 				</section>
-				<!-- /SECTION 5 -->
+				<!-- /SECTION 6 -->
 
-				<!-- SECTION 6 -->
+				<!-- SECTION 7 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
 					<h1>HTML5 today</h1>
 				</section>
@@ -305,14 +404,14 @@
 				<section>
 					<h2>What's next?</h2>
 				</section>
-				<!-- /SECTION 6 -->
+				<!-- /SECTION 7 -->
 
-				<!-- SECTION 7 -->
+				<!-- SECTION 8 -->
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<h2>any questions?</h2>
 				</section>
-				<!-- /SECTION 7 -->
+				<!-- /SECTION 8 -->
 
 			</div>
 			<!-- /SLIDES -->
