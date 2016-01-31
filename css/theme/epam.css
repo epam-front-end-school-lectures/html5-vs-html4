@@ -318,3 +318,73 @@ body {
 
 .reveal small {
   vertical-align: baseline; }
+
+.reveal table th,
+.reveal table td {
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-color: #ccc;
+  vertical-align: middle; }
+
+.reveal table small,
+.reveal table small {
+  font-size: 0.8em;
+  line-height: 1.2em; }
+
+.reveal .timeline {
+  position: relative;
+  display: table;
+  width: 1060px;
+  padding-bottom: 700px;
+  margin: 0 -50px !important;
+  overflow: hidden; }
+
+.reveal .timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1040px;
+  background: #39C2D7;
+  height: 84px; }
+
+.reveal .timeline__row {
+  display: table-row; }
+
+.reveal .timeline__cell {
+  display: table-cell;
+  width: 17%;
+  text-align: left;
+  position: relative; }
+
+.reveal .timeline__cell:before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 1.4em;
+  color: #fff;
+  z-index: 5; }
+
+.reveal .timeline__drop {
+  position: absolute;
+  top: 110px;
+  left: 10px; }
+
+.reveal .timeline__drop h5 {
+  font-size: 0.8em; }
+
+.reveal .timeline__drop p {
+  font-size: 0.7em; }
+
+.reveal .timeline__drop:before {
+  content: '';
+  position: absolute;
+  top: -300px;
+  left: 0;
+  background: #39C2D7;
+  height: 300px;
+  width: 8px; }
+
+.hidden {
+  display: none; }
