@@ -71,6 +71,8 @@
 						<li class="fragment grow">Industry evolution</li>
 						<li class="fragment grow">HTML5 and its benefits</li>
 						<li class="fragment grow">HTML5 today</li>
+						<li class="fragment grow">What's next?</li>
+
 					</ol>
 				</section>
 				<!-- /SECTION 0 -->
@@ -298,6 +300,24 @@
 				</section>
 
 				<section>
+					<h3>Syntax</h3>
+					<pre class="pre_large"><code>
+&lt;!DOCTYPE [Top level element] [Publicity] "[Registration]//[Organization]//[Type] [Name]//[Lang]" "[URL]"&gt;
+					</code></pre>
+					<ul style="font-size:.8em;">
+						<li><b>Top level element</b> — It indicates the top-level element in a document to HTML, this tag &lt;html&gt;.</li>
+						<li><b>Publicity</b> — PUBLIC or SYSTEM</li>
+						<li><b>Registration</b> — Developer DTD registered with the International Organization for Standardization (ISO).
+							It takes one of two values: plus (+) - a developer registered in the ISO, and - (minus) - the developer is not registered. The W3C value put "-".
+						<li><b>Organization</b> — unique name of the organization that developed the DTD</li>
+						<li><b>Type</b> — type describes the document. For HTML / XHTML value specified DTD.</li>
+						<li><b>Name</b> — unique name to describe the document DTD.</li>
+						<li><b></b> — the language in which the text is written to describe the object</li>
+						<li><b>URL</b> — address of the document with DTD.</li>
+					</ul>
+				</section>
+
+				<section>
 					<h2>List of Doctype</h2>
 
 					<style>
@@ -306,6 +326,9 @@
 					</style>
 
 					<pre class="pre_large"><code>
+&lt;!DOCTYPE [Top level element] [Publicity] "[Registration]//[Organization]//[Type] [Name]//[Lang]" "[URL]"&gt;
+
+
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
 
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
@@ -324,7 +347,6 @@
 					</code></pre>
 				</section>
 
-
 				<section>
 					<h3>Validation</h3>
 					<img data-src="img/validator.png" height="570" class="plain" alt="validator">
@@ -338,9 +360,6 @@
 						При валидации будут обнаружены ошибки в XHTML-разметке; валидатор разъяснит суть ошибок.</p>
 				</section>
 				<!-- /SECTION 4 -->
-
-				<section data-background="img/enough_for_today.gif" data-background-color="#250F0D" data-background-size="contain">
-				</section>
 
 				<!-- SECTION 5 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
@@ -424,6 +443,9 @@
 					<p>Сообществом WHATWG (англ. Web Hypertext Application Technology Working Group), начиная с 2004 года[9], разрабатывается спецификация Web Applications 1.0, часто неофициально называемая «HTML 5», которая расширяет HTML (впрочем, имея и совместимый с XHTML 1.0 XML-синтаксис) для лучшего представления семантики различных типичных страниц, например форумов, сайтов аукционов, поисковых систем, онлайн-магазинов и т. д., которые не очень удачно вписываются в модель XHTML 2.0.</p>
 				</section>
 				<!-- /SECTION 5 -->
+
+				<section data-background="img/enough_for_today.gif" data-background-color="#250F0D" data-background-size="contain">
+				</section>
 
 				<!-- SECTION 6 -->
 				<section data-background="#39C2D7" class="has-dark-background-custom">
@@ -586,33 +608,17 @@
 								<td><small>Selector for calendar date</small></td>
 							</tr>
 							<tr>
-								<td><b>datetime-local</b></td>
-								<td><small>Date and time display, with no setting or indication for time zones</small></td>
-							</tr>
-							<tr>
-								<td><b>datetime</b></td>
-								<td><small>Full date and time display, including a time zone.</small></td>
-							</tr>
-							<tr>
 								<td><b>color</b></td>
-								<td><small>Color selector, which could be represented by a wheel or swatch picker</small></td>
+								<td style="line-height:1;"><small style="line-height:1;">Color selector, which could be represented by a wheel or swatch picker</small></td>
 							</tr>
 							<tr>
 								<td><b>email</b></td>
 								<td><small>Input type should be an email</small></td>
 							</tr>
 							<tr>
-								<td><b>month</b></td>
-								<td><small>Selector for a month within a given year</small></td>
-							</tr>
-							<tr>
 								<td><b>number</b></td>
 								<td><small>A field containing a numeric value only</small></td>
 							</tr>
-						</table>
-					</section>
-					<section>
-						<table>
 							<tr>
 								<td><b>range</b></td>
 								<td><small>Numeric selector within a range of values, typically visualized as a slider</small></td>
@@ -633,47 +639,208 @@
 								<td><b>url</b></td>
 								<td><small>Input type should be URL type</small></td>
 							</tr>
-							<tr>
-								<td><b>week</b></td>
-								<td><small>Selector for a week within a given year</small></td>
-							</tr>
 						</table>
 					</section>
 				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						### Weakening of rules
+						```
+						<!DOCTYPE HTML>
+						<meta charset="utf-8">
+						<title>Simple HTML5</title>
+						<p>Simple example of HTML5!</p>
 
-				<section>
-					<h2>New APIs</h2>
-					<table>
-						<tr>
-							<td><b>Web workers</b></td>
-							<td><small>Allows delegation of JavaScript evaluation to background threads, allowing these activities to prevent slowing down interactive events.</small></td>
-						</tr>
-						<tr>
-							<td><b>Web storage</b></td>
-							<td><small>This specification defines an API for persistent data storage of key-value pair data in Web clients.</small></td>
-						</tr>
-						<tr>
-							<td><b>Web sockets</b></td>
-							<td><small>This API used for persisting data storage of data in a key-value pair format for Web clients.</small></td>
-						</tr>
-						<tr>
-							<td><b>History API</b></td>
-							<td><small>Allows the manipulation of the browser history. This is especially useful for pages loading interactively new information.</small></td>
-						</tr>
-						<tr>
-							<td><b>Geolocation</b></td>
-							<td><small>This API is used to provide web applications with scripted access to geographical location information of the hosting device.</small></td>
-						</tr>
-						<tr>
-							<td><b>File API</b></td>
-							<td><small>The File APIs are used by the browser to provide secure access to the file system.</small></td>
-						</tr>
-					</table>
+						<br />
+						<br>
+						<br/>
+						<Br>
+						<BR>
+
+						<img alt="mandatory" src=myimage.jpg />
+						<img data-src=myimage.jpg>
+
+						<input type="checkbox" checked="checked" />
+						<input type="checkbox" checked>
+						```
+					</script>
 				</section>
 
 				<section>
-					<p>Compare semantic HTML4 and HTML5</p>
+					<h3>Compare semantic HTML4 and HTML5</h3>
+
+<pre class="pre_large" style="float:left; width:450px;"><code>&lt;div id=&quot;header&quot;&gt;
+    &lt;h1&gt;Header of Site&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&quot;sidebar&quot;&gt;
+    &lt;h2&gt;Menu&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;post&quot;&gt;
+    &lt;h2&gt;Post #1&lt;/h2&gt;
+    &lt;p&gt;description of first post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;post&quot;&gt;
+    &lt;h2&gt;Post #2&lt;/h2&gt;
+    &lt;p&gt;description of second post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;
+    &lt;p&gt;Bottom of Page&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+<pre class="pre_large" style="float:right; width:450px;"><code>&lt;header&gt;
+    &lt;h1&gt;Header of Page&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+    &lt;h2&gt;Menu&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu item #2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;article&gt;
+    &lt;h2&gt;Post #1&lt;/h2&gt;
+    &lt;p&gt;description of first post.&lt;/p&gt;
+&lt;/article&gt;
+&lt;article&gt;
+    &lt;h2&gt;Post #2&lt;/h2&gt;
+    &lt;p&gt;description of second post.&lt;/p&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+    &lt;p&gt;Bottom of Page&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>New APIs</h2>
+					</section>
+					<section>
+						<h3>W3C Technical Report Development Process</h3>
+						<ol>
+							<li>Publication of the First Public Working Draft,</li>
+							<li>Publication of zero or more revised Public Working Drafts.</li>
+							<li>Publication of a Candidate Recommendation.</li>
+							<li>Publication of a Proposed Recommendation.</li>
+							<li>Publication as a W3C Recommendation.</li>
+							<li>Possibly, Publication as an Edited Recommendation</li>
+						</ol>
+						<img height="189" class="plain" data-src="img/w3c-flow.png" alt="w3c-flow">
+					</section>
+					<section>
+						<h3>Standards</h3>
+						<table style="font-size:0.8em;line-height:1.2;">
+							<tr>
+								<td colspan="2">
+									<b>Session history management, Offline web applications, Drag and Drop, Text API for Canvas, WebGL - 3D Canvas graphics</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Web&nbsp;Notifications</b><br>
+									<small><b>REC</b> 22.10.15</small>
+								</td>
+								<td><small>This API used for displaying simple notifications to the user.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>HTML5 Web Messaging</b><br>
+									<small><b>REC</b> 18.05.15</small>
+								</td>
+								<td><small>This specification defines mechanisms for communicating between browsing contexts in HTML document.
+									<small>Messages in server-sent events, Web sockets, cross-document messaging, channel messaging, and broadcast channels use the MessageEvent interface</small></small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>Server-Sent Events</b><br>
+									<small><b>REC</b> 02.03.15</small>
+								</td>
+								<td><small>This specification defines an API for opening an HTTP connection for receiving push notifications from a server in the form of DOM events.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>Geolocation API</b><br>
+									<small><b>REC</b> 24.10.13</small>
+								</td>
+								<td><small>This API is used to provide web applications with scripted access to geographical location information of the hosting device.</small></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<b>Vibration API, Pointer Events, Progress Events, Metadata API, Page Visibility, Widget Interface</b>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>Recommendations</h3>
+						<table style="font-size:0.8em;">
+							<tr>
+								<td>
+									<b>Web storage (Second&nbsp;Edition)</b><br>
+									<small><b>PR</b> 26.11.2015</small>
+								</td>
+								<td><small>This specification defines an API for persistent data storage of key-value pair data in Web clients.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>Media Source Extensions</b><br>
+									<small><b>CR</b> 12.11.2015</small> n
+								</td>
+								<td><small>This specification extends the HTMLMediaElement interface to allow JavaScript to generate media streams for playback.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>WebSocket API</b><br>
+									<small><b>CR</b> 20.09.2012</small>
+								</td>
+								<td><small>This specification defines an API that enables Web pages to use the Web Sockets protocol for two-way communication with a remote host.</small></td>
+							</tr>
+							<tr>
+								<td>
+									<b>Media&nbsp;Capture&nbsp;API</b><br>
+									<small><b>CR</b> 09.09.2014</small>
+								</td>
+								<td><small>This document defines a set of APIs that allow access to the audio, image and video capture capabilities of the device.</small></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<b>Web Cryptography API, Battery Status API, DeviceOrientation Event</b>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>Draft</h3>
+						<table style="font-size:0.8em;">
+							<tr>
+								<td><b>File API</b></td>
+								<td><small>The File APIs are used by the browser to provide secure access to the file system.</small></td>
+							</tr>
+							<tr>
+								<td><b>HTML Microdata</b></td>
+								<td><small>This API is used to annotate content with specific machine-readable labels, e.g. to allow generic scripts to provide services that are customized to a page.
+									Microdata allows nested groups of name-value pairs to be added to documents.</small></td>
+							</tr>
+							<tr>
+								<td><b>Geolocation&nbsp;API Specification&nbsp;Level&nbsp;2</b></td>
+								<td><small>This specification adds the ability to retrieve a civic address, rather than coordinates, to the Geolocation API.</small></td>
+							</tr>
+							<tr>
+								<td><b>Web workers</b></td>
+								<td><small>Allows delegation of JavaScript evaluation to background threads, allowing these activities to prevent slowing down interactive events.</small></td>
+							</tr>
+							<tr>
+								<td><b>Clipboard API</b></td>
+								<td><small>This document describes apis for clipboard operations such as copy/cut and paste, or drag and drop in web applications.</small></td>
+							</tr>
+						</table>
+					</section>
 				</section>
 				<!-- /SECTION 6 -->
 
@@ -684,23 +851,146 @@
 
 				<section>
 					<h2>HTML5.1</h2>
+					<p>W3C Working Draft 08 October 2015</p>
+					<p>HTML 5.1 is expected to be finalized in 2016</p>
 				</section>
 
 				<section>
-					<h2>What's new?</h2>
+					<h3>What's new?</h3>
+					<ul style="font-size:0.9em">
+						<li>table sorting</li>
+						<li>details and summary element</li>
+						<li>dialog element</li>
+						<li>picture element and srcset attribute</li>
+						<li>menu, menuitem, contextmenu elements</li>
+						<li>seamless iframes</li>
+						<li>scoped style</li>
+						<li>datetime, datetime-local, week, month input types</li>
+						<li>inert attribute</li>
+						<li>:dir() pseudoclass</li>
+						<li>fullScreen() method</li>
+						<li>HTMLFormElement.reportValidity() method</li>
+						<li>new Canvas methods</li>
+					</ul>
 				</section>
 
 				<section>
-					<h2>What's next?</h2>
+					<h3>Can I use?</h3>
+					<img height="600" class="plain" style="margin:0;" data-src="img/caniuse.png" alt="caniuse">
 				</section>
 				<!-- /SECTION 7 -->
 
 				<!-- SECTION 8 -->
+				<section>
+					<section>
+						<h1>What's next?</h1>
+						<img height="404" class="plain" data-src="img/html-next.png" alt="html-next">
+					</section>
+					<section style="font-size:0.8em;" data-markdown>
+						<script type="text/template">
+							#### New elements of semantics
+
+							<b style="font-size:1.2em;">&lt;decompress&gt;</b><br>
+							<small>
+								This element is proposed for the integration of files from a ZIP-archive (ZIP format as the main, however others are possible too) directly into a web page. Advantages of this approach: web-browser access to files from ZIP, reduction of requirements for bandwidth (which is especially important for mobile
+							</small>
+							```
+							<decompress href="http://example.com/mobile/familyreunion.zip">
+							<a href="familyreunion.zip/html/activities.html">Activities from our family reunion</a>
+							<img src="familyreunion.zip/img/family.jpg">
+							```
+							<br>
+							<b style="font-size:1.2em;">&lt;location&gt;</b><br>
+							<small>
+								This element (similar to &lt;time /&gt;) is used to describe geo-information. It is proposed to use the attributes: lat, long, altitude:
+							</small>
+							```
+							<location lat=27.9 long=-71.3 altitude=-100>The Bermuda Triangle</location>
+							```
+						</script>
+					</section>
+					<section style="font-size:0.62em;" data-markdown>
+						<script type="text/template">
+							<b style="font-size:1.4em;">&lt;teaser&gt;</b><br>
+							<small>
+								The element is designed to wrap the content block having a link to a complete block. Such structures we can see everywhere: in the search results on the first page of the blog, resume block with (or without) media resources and so on. In general, it should be a sectional element that can be located in other sectional elements, such as navigation page:
+							</small>
+							```
+							<nav>
+								<teaser>
+									<header>
+										<h1><a href="http://www.example.com/myFirstPost.html">My First Post</a></h1>
+									</header>
+									<p>This is my first article on the page, and it's really cool.</p>
+									<footer>
+										<time>3 Days Ago</time>
+										<div><a href="http://www.example.com/myFirstPost.html">http://www.example.com/myFirstPost.html</a></div>
+									</footer>
+								</teaser>
+								<teaser>
+									<header>
+										<h1><a href="http://www.example.com/mySecondPost.html">My Second Post</a></h1>
+									</header>
+									<p>This article is on superconducting fields, and is even cooler than my first article.</p>
+									<footer>
+										<time>1 Days Ago</time>
+										<div>
+											<a href="http://www.example.com/mySecondPost.html">http://www.example.com/mySecondPost.html</a>
+										</div>
+									</footer>
+								</teaser>
+							</nav>
+							```
+						</script>
+					</section>
+					<section>
+						<h4>Forms</h4>
+						<ul>
+							<li>Automatic writing in input-forms with capital letters</li>
+							<li>Localization of controls
+								<small style="display:block;">(Web developers often have a lack of ability to localize the controls, such as: the button «Browse» to fields &lt;input type=’file’ /&gt;, controls for setting the date/time)</small>
+							</li>
+						</ul>
+						<br><br>
+						<h4>Multimedia</h4>
+						<ul style="width: 100%;">
+							<li>Audio balance
+								<small style="display:block;">Adjusting audio balance (right / left channel) with HTML5 for stereo tracks.</small>
+							</li>
+							<li>Improving video playback
+								<small style="display:block;">fast / slow motion / fast forwarding and previous / next frame</small>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Text editing</h4>
+						<ul style="width: 100%;">
+							<li>Element &lt;editоr&gt;
+								<small style="display:block;">This element allows to save the typed text.</small>
+							</li>
+							<li>&lt;textarea type=”wysiwyg”&gt;
+								<small style="display:block;">The main objective: WYSIWYG-editor for structured (semantic) text. Intended use: blogs, emails, editing articles of CMS sites, and so on. Estimated list of supported elements:
+								<br>- blocks: p, ul/li, ol/li, dl/dt/dd, blockquote, pre
+								<br>- spans: strong/em/a/sup/sub/u/code/strike
+								<br>- inline-blocks: img, br
+								<br>- 	tables: table/tr/th/td
+								</small>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<!-- /SECTION 8 -->
+
+				<!-- SECTION 9 -->
+				<section style="text-align: left;">
+					<h3>important thing is not to remember, but to be able to find the information</h3>
+				</section>
+
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<h2>any questions?</h2>
 				</section>
-				<!-- /SECTION 8 -->
+				<!-- /SECTION 9 -->
 
 			</div>
 			<!-- /SLIDES -->
