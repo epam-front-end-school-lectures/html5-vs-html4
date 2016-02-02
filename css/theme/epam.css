@@ -330,6 +330,45 @@ body {
   font-size: 0.8em;
   line-height: 1.2em; }
 
+.reveal .label {
+  display: inline;
+  padding: 0 .2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background: #39c2d7;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .15em; }
+
+.reveal .label-sec {
+  display: inline;
+  padding: 0 .2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background: #7F993A;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .15em; }
+
+.reveal .label-err {
+  display: inline;
+  padding: 0 .2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background: #B22746;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .15em; }
+
 .reveal .timeline {
   position: relative;
   display: table;
